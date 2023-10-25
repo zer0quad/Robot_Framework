@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231023 23:08:33.176" rpa="false" schemaversion="4">
+<suite id="s1" name="Input Validation" source="E:\Robot_Framework\Automation\Input_Validation.robot">
+<test id="s1-t1" name="ValidationTest" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231023 23:08:33.458" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20231023 23:08:33.458" endtime="20231023 23:08:40.676"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231023 23:08:40.676" endtime="20231023 23:08:40.909"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>flipkart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20231023 23:08:40.917" endtime="20231023 23:08:41.129"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20231023 23:08:41.129" endtime="20231023 23:08:41.162"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${input_text_field}</var>
+<arg>xpath=//input[@class='_18u87m _3WuvDp']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231023 23:08:41.162" level="INFO">${input_text_field} = xpath=//input[@class='_18u87m _3WuvDp']</msg>
+<status status="PASS" starttime="20231023 23:08:41.162" endtime="20231023 23:08:41.162"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${input_txt_field}</var>
+<arg>//input[@class='_18u87m _2r0Y7j _3WuvDp']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231023 23:08:41.162" level="INFO">${input_txt_field} = //input[@class='_18u87m _2r0Y7j _3WuvDp']</msg>
+<status status="PASS" starttime="20231023 23:08:41.162" endtime="20231023 23:08:41.162"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${input_text_field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231023 23:08:41.162" endtime="20231023 23:08:41.222"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input_text_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231023 23:08:41.222" endtime="20231023 23:08:41.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231023 23:08:44.290" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231023 23:08:41.289" endtime="20231023 23:08:44.290"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_text_field}</arg>
+<arg>pranvsridhar1997@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231023 23:08:44.290" level="INFO">Typing text 'pranvsridhar1997@gmail.com' into text field 'xpath=//input[@class='_18u87m _3WuvDp']'.</msg>
+<status status="PASS" starttime="20231023 23:08:44.290" endtime="20231023 23:08:44.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231023 23:08:47.559" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231023 23:08:44.559" endtime="20231023 23:08:47.559"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${input_txt_field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231023 23:08:47.559" endtime="20231023 23:08:47.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231023 23:08:50.729" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231023 23:08:47.728" endtime="20231023 23:08:50.729"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20231023 23:08:50.729" endtime="20231023 23:08:57.171"/>
+</kw>
+<status status="PASS" starttime="20231023 23:08:33.458" endtime="20231023 23:08:57.171"/>
+</test>
+<status status="PASS" starttime="20231023 23:08:33.176" endtime="20231023 23:08:57.185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input Validation">Input Validation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
